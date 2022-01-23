@@ -1,22 +1,25 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-
+using Steamworks;
 namespace PimaxLightFixer
+
 {
     [HarmonyPatch(typeof(Camera), new Type[] { typeof(Camera.StereoscopicEye) })]
     [HarmonyPatch("GetStereoProjectionMatrix", MethodType.Normal)]
     public class CameraPatches
+
     {
         private static Matrix4x4 matrixAdditave = new Matrix4x4();
         private static int selectedMatrixIndex = 0;
         private static bool keyDown = false;
 
         public static void Postfix(Camera.StereoscopicEye eye, ref Matrix4x4 __result)
+
         {
             //if (Input.GetKey(KeyCode.RightArrow))
             //{
@@ -65,11 +68,20 @@ namespace PimaxLightFixer
             //    keyDown = false;
             //for (int i = 0; i < 15; i++)
             //    __result[i] += eye == Camera.StereoscopicEye.Left ? -matrixAdditave[i] : matrixAdditave[i];
-            
-             __result[8] += eye == Camera.StereoscopicEye.Left ? -0.1f : 0.1f;
-        }
-    }
 
+        
+            
+        
+
+
+        __result[8] += eye == Camera.StereoscopicEye.Right ? 0.4900f : -0.23f;
+                __result[8] += eye == Camera.StereoscopicEye.Left ? 0.23f : -0.23f;
+            
+            
+        }
+
+    }
+   
     //[HarmonyPatch(typeof(TubeBloomPrePassLight))]
     //[HarmonyPatch("FillMeshData", MethodType.Normal)]
     //public class TubeBloomPrepassPatches
