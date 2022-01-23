@@ -1,4 +1,4 @@
-﻿using BeatSaberMarkupLanguage;
+using BeatSaberMarkupLanguage;
 using BeatSaberMarkupLanguage.Settings;
 using IPA.Config;
 using System;
