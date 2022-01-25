@@ -3,7 +3,7 @@
 get this mod!
 <hr>
 
-Known bugs *some rotational lighting problems on an 8kx, are being worked out shortly, and reflections on the ground*
+Known bugs *reflections on the ground are wrong*
 
 # WARNING! WILL CAUSE LIGHTING PROBLEMS ON NON PIMAX HEADSETS
 
