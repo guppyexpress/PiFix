@@ -15,7 +15,8 @@ namespace PimaxLightFixer
     public class Plugin
     {
         public string Name => "PiFix";
-        public string Version => "1.0.2";
+        public string Version => "0.0.7";
+        [OnEnable]
         public void OnApplicationStart()
         {
             SceneManager.activeSceneChanged += SceneManagerOnActiveSceneChanged;
@@ -71,7 +72,8 @@ namespace PimaxLightFixer
            // if (arg0.name == "MenuCore") ;
             
         }
-     
+
+        [OnDisable]
         public void OnApplicationQuit()
         {
             SceneManager.activeSceneChanged -= SceneManagerOnActiveSceneChanged;

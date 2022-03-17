@@ -125,10 +125,6 @@
     <Reference Include="Mono.WebBrowser">
       <HintPath>F:\SteamLibrary\steamapps\common\Beat Saber\Beat Saber_Data\Managed\Mono.WebBrowser.dll</HintPath>
     </Reference>
-    <Reference Include="Steamworks.NET, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\SteamLibrary\steamapps\common\Beat Saber\Beat Saber_Data\Managed\Steamworks.NET.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -362,11 +358,12 @@
     <Compile Include="CameraPatches.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Plugin.cs" />
-    <Compile Include="Configuration\PluginConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="manifest.json" />
+    <None Include="Directory.Build.props" />
+    <None Include="Directory.Build.targets" />
+    <None Include="manifest.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

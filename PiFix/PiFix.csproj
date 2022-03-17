@@ -44,6 +44,15 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>F:\SteamLibrary\steamapps\common\Beat Saber\Libs\0Harmony.dll</HintPath>
     </Reference>
+    <Reference Include="BSML">
+      <HintPath>F:\SteamLibrary\steamapps\common\Beat Saber\Plugins\BSML.dll</HintPath>
+    </Reference>
+    <Reference Include="BS_Utils">
+      <HintPath>F:\SteamLibrary\steamapps\common\Beat Saber\Plugins\BS_Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="IPA">
+      <HintPath>F:\SteamLibrary\steamapps\common\Beat Saber\IPA.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -96,11 +105,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BSML.cs" />
     <Compile Include="CameraPatch.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Configuration\PluginConfig.cs" />
-    <Compile Include="PiFixController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

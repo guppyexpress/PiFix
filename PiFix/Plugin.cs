@@ -7,22 +7,24 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using IPA;
+using IPA.Config;
 namespace PimaxLightFixer
 {
+
     [Plugin(RuntimeOptions.DynamicInit)]
     public class Plugin
     {
         public string Name => "PiFix";
-        public string Version => "0.0.7";
+        public string Version => "1.0.2";
         public void OnApplicationStart()
         {
             SceneManager.activeSceneChanged += SceneManagerOnActiveSceneChanged;
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
 
-            var harmonyInstance = HarmonyAttribute.Create("com.guppyexpress.PiFix");
+            var harmonyInstance = new Harmony("com.guppyexpress.beatsaber.PiFix");
             harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
         }
-      
+
         private void SceneManagerOnActiveSceneChanged(Scene arg0, Scene arg1)
         {
             if (Config.DisableLighting)
@@ -35,7 +37,7 @@ namespace PimaxLightFixer
         {
             yield return new WaitForSeconds(0.1f);
 
-            Resources.FindObjectsOfTypeAll<BloomFogParamsAsset>()?.ToList().ForEach(t =>
+            Resources.FindObjectsOfTypeAll<BloomPrePassLight>()?.ToList().ForEach(t =>
             {
                 var tube = t.GetComponentInChildren<TubeBloomPrePassLight>();
                 if (tube)
@@ -66,8 +68,8 @@ namespace PimaxLightFixer
 
         private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
         {
-            if (arg0.name == "MenuCore")
-                Settings.OnLoad();
+            // if (arg0.name == "MenuCore") ;
+
         }
 
         public void OnApplicationQuit()

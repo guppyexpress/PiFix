@@ -65,8 +65,8 @@ namespace PimaxLightFixer
             //    keyDown = false;
             //for (int i = 0; i < 15; i++)
             //    __result[i] += eye == Camera.StereoscopicEye.Left ? -matrixAdditave[i] : matrixAdditave[i];
-
-            __result[8] += eye == Camera.StereoscopicEye.Left ? -0.1f : 0.1f;
+            
+             __result[8] += eye == Camera.StereoscopicEye.Left ? -0.1f : 0.1f;
         }
     }
 
