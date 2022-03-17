@@ -97,7 +97,7 @@ namespace PiFix
                     tube.enabled = false;
             });
         }
-
+        bool materialFound = true;
         private IEnumerator SwapSpriteTextShader()
         {
             yield return new WaitForSeconds(0.1f);
@@ -105,7 +105,11 @@ namespace PiFix
             Material material = Resources.FindObjectsOfTypeAll<Material>().Where(m => m.name == materialName).FirstOrDefault();
             if (material != null)
             {
-                Logger.Debug($"Using material '{material.name}'");
+                if (!materialFound)
+                {
+                    Logger.Debug($"Using material '{material.name}'");
+                }
+                materialFound = true;
                 Resources.FindObjectsOfTypeAll<UnityEngine.UI.Image>()?.ToList().ForEach(t =>
                 {
                     var mat = Material.Instantiate(material);
@@ -122,7 +126,9 @@ namespace PiFix
             }
             else
             {
-                Logger.Debug($"Could not find Material '{materialName}'");
+                if (materialFound)
+                    Logger.Debug($"Could not find Material '{materialName}'");
+                materialFound = false;
             }
         }
 
