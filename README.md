@@ -27,7 +27,7 @@ please extract the zipped folder by right clicking the zip file, and clicking ex
 
 # Q&A
 
-<h2> Why is it downloaded in a zip file off of mod assistant? Why doesnt it download a dll like every other mod?" </h2>
+<h2> Why is it downloaded in a zip file off of mod assistant? Why doesnt it download a dll like every other mod? </h2>
 
 >PiFix offsets the lighting effects to fix the issue found on pimax headsets. non Pimax headsets such as Oculus, Valve Index, HTC and Windows Mixed Reality will get their lighting and vision offcentered. causing double vision. there is currently no way that I can grab a hardware ID from a Pimax headset. and so to avoid someone accidentally installing PiFix while on an Oculus, HTC, Windows Mixed Reality, or Valve Index and then complaining that they now have double vision and it ruined their game. It just downloads as a zip folder and you have to manually enable the mod.
 
