@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-using Steamworks;
 namespace PiFix
 
 {
@@ -19,7 +18,6 @@ namespace PiFix
         private static bool keyDown = false;
 
         public static void Postfix(Camera.StereoscopicEye eye, ref Matrix4x4 __result)
-
         {
             //if (Input.GetKey(KeyCode.RightArrow))
             //{
