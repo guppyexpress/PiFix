@@ -90,7 +90,6 @@ namespace PiFix
         private IEnumerator DisablePrePassLights()
         {
             yield return new WaitForSeconds(0.1f);
-
             Resources.FindObjectsOfTypeAll<BloomPrePassLight>()?.ToList().ForEach(t =>
             {
                 var tube = t.GetComponentInChildren<TubeBloomPrePassLight>();
@@ -106,6 +105,7 @@ namespace PiFix
             Material material = Resources.FindObjectsOfTypeAll<Material>().Where(m => m.name == materialName).FirstOrDefault();
             if (material != null)
             {
+                Logger.Debug($"Using material '{material.name}'");
                 Resources.FindObjectsOfTypeAll<UnityEngine.UI.Image>()?.ToList().ForEach(t =>
                 {
                     var mat = Material.Instantiate(material);
@@ -122,7 +122,7 @@ namespace PiFix
             }
             else
             {
-                Logger.Error($"Could not find Material '{materialName}'");
+                Logger.Debug($"Could not find Material '{materialName}'");
             }
         }
 
