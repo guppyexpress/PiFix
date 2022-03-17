@@ -8,27 +8,39 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using IPA;
 using IPA.Config;
+using PiFix.Configuration;
+
 namespace PimaxLightFixer
 {
-   
     [Plugin(RuntimeOptions.DynamicInit)]
     public class Plugin
     {
-        public string Name => "PiFix";
-        public string Version => "0.0.7";
+        internal static Plugin Instance { get; private set; }
+        internal static PluginConfig Config { get; private set; }
+        internal static Harmony harmony { get; private set; }
         [OnEnable]
         public void OnApplicationStart()
         {
+            SceneManager.activeSceneChanged -= SceneManagerOnActiveSceneChanged;
+            SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
             SceneManager.activeSceneChanged += SceneManagerOnActiveSceneChanged;
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+            if (harmony == null)
+                harmony = new Harmony("com.guppyexpress.beatsaber.PiFix");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
+        }
 
-            var harmonyInstance = new Harmony("com.guppyexpress.beatsaber.PiFix");
-            harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
+        [OnDisable]
+        public void OnApplicationQuit()
+        {
+            SceneManager.activeSceneChanged -= SceneManagerOnActiveSceneChanged;
+            SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
+            harmony.UnpatchSelf();
         }
 
         private void SceneManagerOnActiveSceneChanged(Scene arg0, Scene arg1)
         {
-            if(Config.DisableLighting)
+            if (Config.DisableLighting)
                 SharedCoroutineStarter.instance.StartCoroutine(DisablePrePassLights());
 
             SharedCoroutineStarter.instance.StartCoroutine(SwapSpriteTextShader());
@@ -69,31 +81,8 @@ namespace PimaxLightFixer
 
         private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
         {
-           // if (arg0.name == "MenuCore") ;
-            
-        }
+            // if (arg0.name == "MenuCore") ;
 
-        [OnDisable]
-        public void OnApplicationQuit()
-        {
-            SceneManager.activeSceneChanged -= SceneManagerOnActiveSceneChanged;
-            SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
-        }
-     
-        public void OnLevelWasLoaded(int level)
-        {
-        }
-
-        public void OnLevelWasInitialized(int level)
-        {
-        }
-
-        public void OnUpdate()
-        {
-        }
-
-        public void OnFixedUpdate()
-        {
         }
     }
 }

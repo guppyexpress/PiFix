@@ -1,14 +1,19 @@
-﻿/*
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 using IPA.Config.Stores;
 
 [assembly: InternalsVisibleTo(GeneratedStore.AssemblyVisibilityTarget)]
 namespace PiFix.Configuration
 {
+    public enum PiMaxType
+    {
+        None,
+        Five,
+        Eight
+    }
     internal class PluginConfig
     {
-        public static PluginConfig Instance { get; set; }
-        public virtual int IntValue { get; set; } = 42; // Must be 'virtual' if you want BSIPA to detect a value change and save the config automatically.
+        public virtual PiMaxType PiMaxType { get; set; } = PiMaxType.None;
+        public virtual bool DisableLighting { get; set; } = false;
 
         /// <summary>
         /// This is called whenever BSIPA reads the config from disk (including when file changes are detected).
@@ -32,7 +37,7 @@ namespace PiFix.Configuration
         public virtual void CopyFrom(PluginConfig other)
         {
             // This instance's members populated from other
+            PiMaxType = other.PiMaxType;
         }
     }
 }
-*/
