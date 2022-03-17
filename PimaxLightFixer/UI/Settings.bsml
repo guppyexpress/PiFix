@@ -1,0 +1,8 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+	xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'
+	>
+	<dropdown-list-setting text='PiMax Type' value='PiMaxType' options='PiMaxTypes' bind-value='true'
+                             apply-on-change='true' hover-hint='Which type of PiMax headset you use.' />
+	<bool-setting text='Disable Lighting' value='DisableLighting' bind-value='true' apply-on-change='true'
+				  hover-hint='Disable lighting effects.'/>
+</bg>

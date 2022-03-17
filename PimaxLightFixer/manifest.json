@@ -9,5 +9,7 @@
   "dependsOn": {
     "BSIPA": "^4.2.2"
   },
-  "features": []
+  "loadAfter": [
+    "BeatSaberMarkupLanguage"
+  ]
 }

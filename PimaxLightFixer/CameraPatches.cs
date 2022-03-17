@@ -73,10 +73,9 @@ namespace PiFix
 
 
 
-            //pimax 5k values
             if (Plugin.Config.PiMaxType == PiFix.Configuration.PiMaxType.Five)
             {
-
+                //pimax 5k values
                 __result[8] += eye == Camera.StereoscopicEye.Right ? 0.4900f : -0.23f;
                 __result[8] += eye == Camera.StereoscopicEye.Left ? 0.23f : -0.23f;
             }

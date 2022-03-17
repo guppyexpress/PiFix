@@ -1,17 +1,27 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using BeatSaberMarkupLanguage.Attributes;
 using IPA.Config.Stores;
+using IPA.Config.Stores.Attributes;
+using IPA.Config.Stores.Converters;
 
 [assembly: InternalsVisibleTo(GeneratedStore.AssemblyVisibilityTarget)]
 namespace PiFix.Configuration
 {
     public enum PiMaxType
     {
+        
         None,
+        [Description("5k")]
         Five,
+        [Description("8k")]
         Eight
     }
     internal class PluginConfig
     {
+
+        [UseConverter(typeof(EnumConverter<PiMaxType>))]
         public virtual PiMaxType PiMaxType { get; set; } = PiMaxType.None;
         public virtual bool DisableLighting { get; set; } = false;
 
@@ -39,5 +49,17 @@ namespace PiFix.Configuration
             // This instance's members populated from other
             PiMaxType = other.PiMaxType;
         }
+
+        /// <summary>
+        /// List of possible options for BSML settings view.
+        /// </summary>
+        [Ignore]
+        public List<object> PiMaxTypes = new List<object>() 
+        { 
+            PiMaxType.None,
+            PiMaxType.Five,
+            PiMaxType.Eight 
+        };
+
     }
 }
