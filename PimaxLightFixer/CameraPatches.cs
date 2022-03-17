@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Steamworks;
-namespace PimaxLightFixer
+namespace PiFix
 
 {
     [HarmonyPatch(typeof(Camera), new Type[] { typeof(Camera.StereoscopicEye) })]

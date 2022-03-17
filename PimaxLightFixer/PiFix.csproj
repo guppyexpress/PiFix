@@ -7,12 +7,12 @@
     <ProjectGuid>{F1BCF1CD-8EC6-403A-AB09-13B118250F87}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PimaxLightFixer</RootNamespace>
-    <AssemblyName>PimaxLightFixer</AssemblyName>
+    <RootNamespace>PiFix</RootNamespace>
+    <AssemblyName>PiFix</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BeatSaberDir>F:\SteamLibrary\steamapps\common\Beat Saber</BeatSaberDir>
-	<BSMTProjectType>BSIPA</BSMTProjectType>
+    <BSMTProjectType>BSIPA</BSMTProjectType>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -52,9 +52,6 @@
     </Reference>
     <Reference Include="BSML">
       <HintPath>$(BeatSaberDir)\Plugins\BSML.dll</HintPath>
-    </Reference>
-    <Reference Include="BS_Utils">
-      <HintPath>$(BeatSaberDir)\Plugins\BS_Utils.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
       <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\Cinemachine.dll</HintPath>

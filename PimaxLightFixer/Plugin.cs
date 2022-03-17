@@ -10,7 +10,7 @@ using IPA;
 using IPA.Config;
 using PiFix.Configuration;
 
-namespace PimaxLightFixer
+namespace PiFix
 {
     [Plugin(RuntimeOptions.DynamicInit)]
     public class Plugin
@@ -18,15 +18,19 @@ namespace PimaxLightFixer
         internal static Plugin Instance { get; private set; }
         internal static PluginConfig Config { get; private set; }
         internal static Harmony harmony { get; private set; }
-        [OnEnable]
+        [Init]
         public void OnApplicationStart()
+        {
+            if (harmony == null)
+                harmony = new Harmony("com.guppyexpress.beatsaber.PiFix");
+        }
+        [OnEnable]
+        public void OnEnable()
         {
             SceneManager.activeSceneChanged -= SceneManagerOnActiveSceneChanged;
             SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
             SceneManager.activeSceneChanged += SceneManagerOnActiveSceneChanged;
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
-            if (harmony == null)
-                harmony = new Harmony("com.guppyexpress.beatsaber.PiFix");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
