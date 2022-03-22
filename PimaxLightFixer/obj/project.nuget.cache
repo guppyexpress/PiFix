@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "rElBc4qJHMJuyhbm+WYqm3Hbhtu9HfcYIj19dbVzo84lhzRDuf1EVtJwe9C68xOzpNoDQvuLJPlbx594TbjV7Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix-config\\PimaxLightFixer\\PiFix.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sheen\\.nuget\\packages\\beatsabermoddingtools.tasks\\2.0.0-beta4\\beatsabermoddingtools.tasks.2.0.0-beta4.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\microsoft.build.framework\\16.5.0\\microsoft.build.framework.16.5.0.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\microsoft.build.tasks.core\\16.5.0\\microsoft.build.tasks.core.16.5.0.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\microsoft.build.utilities.core\\16.5.0\\microsoft.build.utilities.core.16.5.0.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\microsoft.visualstudio.setup.configuration.interop\\1.16.30\\microsoft.visualstudio.setup.configuration.interop.1.16.30.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\system.diagnostics.process\\4.3.0\\system.diagnostics.process.4.3.0.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\system.resources.extensions\\4.6.0\\system.resources.extensions.4.6.0.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Sheen\\.nuget\\packages\\system.threading.tasks.dataflow\\4.9.0\\system.threading.tasks.dataflow.4.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}
