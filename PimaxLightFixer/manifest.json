@@ -1,0 +1,15 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+  "id": "PiFix",
+  "name": "PiFix",
+  "author": "Tsar-Dev-Collective",
+  "version": "2.20.0",
+  "description": "Fixes the lighting issue commonly found when playing on a Pimax headset",
+  "gameVersion": "1.20.0",
+  "dependsOn": {
+    "BSIPA": "^4.2.2"
+  },
+  "loadAfter": [
+    "BeatSaberMarkupLanguage"
+  ]
+}
