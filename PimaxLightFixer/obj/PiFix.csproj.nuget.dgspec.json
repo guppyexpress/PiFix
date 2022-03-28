@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix-config\\PimaxLightFixer\\PiFix.csproj": {}
+    "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix\\PimaxLightFixer\\PiFix.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix-config\\PimaxLightFixer\\PiFix.csproj": {
+    "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix\\PimaxLightFixer\\PiFix.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix-config\\PimaxLightFixer\\PiFix.csproj",
+        "projectUniqueName": "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix\\PimaxLightFixer\\PiFix.csproj",
         "projectName": "PiFix",
-        "projectPath": "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix-config\\PimaxLightFixer\\PiFix.csproj",
+        "projectPath": "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix\\PimaxLightFixer\\PiFix.csproj",
         "packagesPath": "C:\\Users\\Sheen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix-config\\PimaxLightFixer\\obj\\",
+        "outputPath": "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix\\PimaxLightFixer\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

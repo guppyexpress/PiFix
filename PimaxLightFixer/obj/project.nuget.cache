@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rElBc4qJHMJuyhbm+WYqm3Hbhtu9HfcYIj19dbVzo84lhzRDuf1EVtJwe9C68xOzpNoDQvuLJPlbx594TbjV7Q==",
+  "dgSpecHash": "pJ7G0UiFQG9UFsKPLtGWICEskLOs57VlECK5BUyGNZ8MPghXPx8u4gLvNdCoCIkRovPdxd67+yYo09/uDpDyCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix-config\\PimaxLightFixer\\PiFix.csproj",
+  "projectFilePath": "C:\\Users\\Sheen\\source\\repos\\PimaxLightFix\\PimaxLightFixer\\PiFix.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sheen\\.nuget\\packages\\beatsabermoddingtools.tasks\\2.0.0-beta4\\beatsabermoddingtools.tasks.2.0.0-beta4.nupkg.sha512",
     "C:\\Users\\Sheen\\.nuget\\packages\\microsoft.build.framework\\16.5.0\\microsoft.build.framework.16.5.0.nupkg.sha512",
