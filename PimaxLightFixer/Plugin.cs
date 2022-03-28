@@ -41,9 +41,9 @@ namespace PiFix
             if (!SettingsMenuCreated)
                 CreateSettingsMenu();
             SceneManager.activeSceneChanged -= SceneManagerOnActiveSceneChanged;
-            SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
+          //  SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
             SceneManager.activeSceneChanged += SceneManagerOnActiveSceneChanged;
-            SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+          //  SceneManager.sceneLoaded += SceneManager_sceneLoaded;
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
@@ -52,7 +52,7 @@ namespace PiFix
         {
             Logger.Debug($"PiFix disabled");
             SceneManager.activeSceneChanged -= SceneManagerOnActiveSceneChanged;
-            SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
+          //  SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
             harmony.UnpatchSelf();
         }
 
@@ -136,10 +136,10 @@ namespace PiFix
               }
           } */
 
-        private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
-        {
+      //  private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
+       // {
             // if (arg0.name == "MenuCore") ; 
 
         } 
     }
-}
+//}
