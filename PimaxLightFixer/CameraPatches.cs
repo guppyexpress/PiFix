@@ -19,54 +19,7 @@ namespace PiFix
 
         public static void Postfix(Camera.StereoscopicEye eye, ref Matrix4x4 __result)
         {
-            //if (Input.GetKey(KeyCode.RightArrow))
-            //{
-            //    matrixAdditave[selectedMatrixIndex] += 0.01f;
-            //    Console.WriteLine($"matrix {selectedMatrixIndex} offset is {matrixAdditave[selectedMatrixIndex] }");
-            //}
-            //else if (Input.GetKey(KeyCode.LeftArrow))
-            //{
-            //    matrixAdditave[selectedMatrixIndex] -= 0.01f;
-            //    Console.WriteLine($"matrix {selectedMatrixIndex} offset is {matrixAdditave[selectedMatrixIndex] }");
-            //}
-
-            //if (Input.anyKey)
-            //{
-            //    if (!keyDown)
-            //    {
-            //        if (Input.GetKey(KeyCode.UpArrow))
-            //        {
-            //            selectedMatrixIndex++;
-
-            //            if (selectedMatrixIndex > 15)
-            //                selectedMatrixIndex = 15;
-
-            //            keyDown = true;
-            //            Console.WriteLine($"Selected matrix {selectedMatrixIndex}");
-            //        }
-            //        else if (Input.GetKey(KeyCode.DownArrow))
-            //        {
-            //            selectedMatrixIndex--;
-
-            //            if (selectedMatrixIndex < 0)
-            //                selectedMatrixIndex = 0;
-
-            //            keyDown = true;
-            //            Console.WriteLine($"Selected matrix {selectedMatrixIndex}");
-            //        }
-            //        else if (Input.GetKey(KeyCode.R))
-            //        {
-            //            matrixAdditave[selectedMatrixIndex] = 0;
-            //            keyDown = true;
-            //            Console.WriteLine($"reset matrix {selectedMatrixIndex}");
-            //        }
-            //    }
-            //}
-            //else if (keyDown)
-            //    keyDown = false;
-            //for (int i = 0; i < 15; i++)
-            //    __result[i] += eye == Camera.StereoscopicEye.Left ? -matrixAdditave[i] : matrixAdditave[i];
-
+          
 
             // I need the stupid ground reflections to 300% fix this or im smashing my head into a brick wall doing nothing
 

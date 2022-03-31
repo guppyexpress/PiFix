@@ -97,49 +97,5 @@ namespace PiFix
               });
           }
 
-        //leave what is below included in the main code but keep it commented out this is because Pimax releases a new headset every 6 months
-        //and just incase it is required for the Reality series which uses QLED this might have to be reactivated. in a future version as part of the toggleable
-        //menu system. also line 86 is included in this too. but we dont talk about line 86
-
-        /*  bool materialFound = true;
-          private IEnumerator SwapSpriteTextShader()
-          {
-              yield return new WaitForSeconds(0.1f);
-              string materialName = "UINoGlow";
-              Material material = Resources.FindObjectsOfTypeAll<Material>().Where(m => m.name == materialName).FirstOrDefault();
-              if (material != null)
-              {
-                  if (!materialFound)
-                  {
-                      Logger.Debug($"Using material '{material.name}'");
-                  }
-                  materialFound = true;
-                  Resources.FindObjectsOfTypeAll<UnityEngine.UI.Image>()?.ToList().ForEach(t =>
-                  {
-                      var mat = Material.Instantiate(material);
-                      mat.color = t.material.color.ColorWithAlpha(t.material.color.a == 0 ? 0.7f : t.material.color.a); //changes UI color for some reason. default is material.color.a == 0 ? 0.7f
-                      t.material = mat; 
-                  });
-
-                  Resources.FindObjectsOfTypeAll<TMP_Text>()?.ToList().ForEach(t =>
-                  {
-                      var mat = Material.Instantiate(material);
-                      mat.color = t.material.color.ColorWithAlpha(t.material.color.a == 0 ? 0.7f : t.material.color.a);//changes UI color for some reason. default is material.color.a == 0 ? 0.7f
-                      t.material = mat;
-                  });
-              }
-              else
-              {
-                  if (materialFound)
-                      Logger.Debug($"Could not find Material '{materialName}'");
-                  materialFound = false;
-              }
-          } */
-
-      //  private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
-       // {
-            // if (arg0.name == "MenuCore") ; 
-
         } 
     }
-//}
