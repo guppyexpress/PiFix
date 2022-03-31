@@ -4,5 +4,5 @@
 	<dropdown-list-setting text='Pimax Type' value='PimaxType' options='PimaxTypes' bind-value='true'
                              apply-on-change='true' hover-hint='Which type of Pimax headset you use.' />
 	<bool-setting text='Disable Lighting' value='DisableLighting' bind-value='true' apply-on-change='true'
-				  hover-hint='Disable lighting effects.'/>
+				  hover-hint='Disable lighting effects.'/> 
 </bg>

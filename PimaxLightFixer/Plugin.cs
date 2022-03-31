@@ -55,7 +55,7 @@ namespace PiFix
           //  SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
             harmony.UnpatchSelf();
         }
-
+ 
         private void CreateSettingsMenu()
         {
             try

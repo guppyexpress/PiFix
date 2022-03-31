@@ -20,6 +20,7 @@ namespace PiFix.Configuration
         [Description("12k")]
         TwelveK
     }
+
     internal class PluginConfig
     {
 
