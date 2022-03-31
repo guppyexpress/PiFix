@@ -13,9 +13,6 @@ namespace PiFix
     public class CameraPatches
 
     {
-        private static Matrix4x4 matrixAdditave = new Matrix4x4();
-        private static int selectedMatrixIndex = 0;
-        private static bool keyDown = false;
 
         public static void Postfix(Camera.StereoscopicEye eye, ref Matrix4x4 __result)
         {
@@ -52,13 +49,4 @@ namespace PiFix
 
     }
 
-   // [HarmonyPatch(typeof(TubeBloomPrePassLight))]
-   // [HarmonyPatch("FillMeshData", MethodType.Normal)]
-  //  public class TubeBloomPrepassPatches
-   // {
-     //   public static bool Prefix(int lightNum, Vector3[] vertices, Color[] colors, Vector4[] viewPos, Matrix4x4 viewMatrix, Matrix4x4 projectionMatrix, float lineWidth)
-     //   {
-      //      return true;
-      //  }
-   // }
 }
