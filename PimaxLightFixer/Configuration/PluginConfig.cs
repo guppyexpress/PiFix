@@ -16,7 +16,9 @@ namespace PiFix.Configuration
         [Description("5k")]
         FiveK, 
         [Description("8k")]
-        EightK
+        EightK,
+        [Description("12k")]
+        TwelveK
     }
     internal class PluginConfig
     {
@@ -58,7 +60,8 @@ namespace PiFix.Configuration
         { 
             PimaxType.None,
             PimaxType.FiveK,
-            PimaxType.EightK 
+            PimaxType.EightK,
+            PimaxType.TwelveK
         };
 
     }

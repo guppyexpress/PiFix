@@ -67,32 +67,37 @@ namespace PiFix
             //for (int i = 0; i < 15; i++)
             //    __result[i] += eye == Camera.StereoscopicEye.Left ? -matrixAdditave[i] : matrixAdditave[i];
 
+            
+            
 
-
-
-
+            //pimax 5k values
             if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.FiveK)
             {
-                //pimax 5k values
                 __result[8] += eye == Camera.StereoscopicEye.Right ? 0.4900f : -0.23f;
                 __result[8] += eye == Camera.StereoscopicEye.Left ? 0.23f : -0.23f;
             }
+            //pimax 8k values
             else if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.EightK)
             {
-                //pimax 8k values
                 __result[8] += eye == Camera.StereoscopicEye.Right ? 0.1660f : -0.00f;
             }
+            //pimax 12k values
+            else if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.TwelveK)
+            {
+                __result[8] += eye == Camera.StereoscopicEye.Right ? 0.0512f : -0.443f;
+                __result[8] += eye == Camera.StereoscopicEye.Left ? 0.443f : -0.443f;
+           }
         }
 
     }
 
-    //[HarmonyPatch(typeof(TubeBloomPrePassLight))]
-    //[HarmonyPatch("FillMeshData", MethodType.Normal)]
-    //public class TubeBloomPrepassPatches
-    //{
-    //    public static bool Prefix(int lightNum, Vector3[] vertices, Color[] colors, Vector4[] viewPos, Matrix4x4 viewMatrix, Matrix4x4 projectionMatrix, float lineWidth)
-    //    {
-    //        return true;
-    //    }
-    //}
+   // [HarmonyPatch(typeof(TubeBloomPrePassLight))]
+   // [HarmonyPatch("FillMeshData", MethodType.Normal)]
+  //  public class TubeBloomPrepassPatches
+   // {
+     //   public static bool Prefix(int lightNum, Vector3[] vertices, Color[] colors, Vector4[] viewPos, Matrix4x4 viewMatrix, Matrix4x4 projectionMatrix, float lineWidth)
+     //   {
+      //      return true;
+      //  }
+   // }
 }
