@@ -67,8 +67,16 @@ namespace PiFix
             //for (int i = 0; i < 15; i++)
             //    __result[i] += eye == Camera.StereoscopicEye.Left ? -matrixAdditave[i] : matrixAdditave[i];
 
-            
-            
+
+            // I need the stupid ground reflections to 300% fix this or im smashing my head into a brick wall doing nothing
+
+            /* Resources.FindObjectsOfTypeAll<MirroredGameNoteController>();
+             Resources.FindObjectsOfTypeAll<MirroredBombNoteController>();
+             Resources.FindObjectsOfTypeAll<MirroredObstacleController>(); */
+
+            //what is above is the precurser code for the reflections fix. please dont touch it.
+
+           
 
             //pimax 5k values
             if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.FiveK)
@@ -84,7 +92,7 @@ namespace PiFix
             //pimax 12k values
             else if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.TwelveK)
             {
-                __result[8] += eye == Camera.StereoscopicEye.Right ? 0.0512f : -0.443f;
+                __result[8] += eye == Camera.StereoscopicEye.Right ? 0.05120f : -0.443f;
                 __result[8] += eye == Camera.StereoscopicEye.Left ? 0.443f : -0.443f;
            }
         }
