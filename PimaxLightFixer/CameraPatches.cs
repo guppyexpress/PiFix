@@ -11,7 +11,7 @@ namespace PiFix
     [HarmonyPatch(typeof(Camera), new Type[] { typeof(Camera.StereoscopicEye) })]
     [HarmonyPatch("GetStereoProjectionMatrix", MethodType.Normal)]
     public class CameraPatches
-    
+     
 
     {
 
