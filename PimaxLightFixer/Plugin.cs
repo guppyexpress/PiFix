@@ -12,6 +12,7 @@ using PiFix.Configuration;
 using IPA.Loader;
 using IPALogger = IPA.Logging.Logger;
 using System;
+using BeatSaberMarkupLanguage.Settings;
 
 namespace PiFix
 {
@@ -41,10 +42,11 @@ namespace PiFix
             if (!SettingsMenuCreated)
                 CreateSettingsMenu();
             SceneManager.activeSceneChanged -= SceneManagerOnActiveSceneChanged;
-          //  SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
+           // SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
             SceneManager.activeSceneChanged += SceneManagerOnActiveSceneChanged;
           //  SceneManager.sceneLoaded += SceneManager_sceneLoaded;
             harmony.PatchAll(Assembly.GetExecutingAssembly());
+           
         }
 
         [OnDisable]
@@ -52,8 +54,11 @@ namespace PiFix
         {
             Logger.Debug($"PiFix disabled");
             SceneManager.activeSceneChanged -= SceneManagerOnActiveSceneChanged;
-          //  SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
+            //  SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
             harmony.UnpatchSelf();
+
+            BSMLSettings.instance.RemoveSettingsMenu(Config);
+            
         }
  
         private void CreateSettingsMenu()
@@ -73,7 +78,9 @@ namespace PiFix
             }
             catch (Exception ex)
             {
-                Logger.Error($"Error creating settings menu: {ex.Message}");
+                   Logger.Error($"Error creating settings menu: {ex.Message}");
+                Logger.Warn($"BeatSaberMarkupLanguage not found setting menu not created, please install BeatSaberMarkupLanguage: {ex.Message}");
+                Logger.Debug($"To adjust the HMD used please edit the JSON in the UserData folder: {ex.Message}");
                 Logger.Debug(ex.StackTrace);
             }
         }

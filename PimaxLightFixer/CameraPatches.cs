@@ -12,19 +12,13 @@ namespace PiFix
     [HarmonyPatch("GetStereoProjectionMatrix", MethodType.Normal)]
     public class CameraPatches
 
+    
+
     {
 
         public static void Postfix(Camera.StereoscopicEye eye, ref Matrix4x4 __result)
+           
         {
-          
-
-            // I need the stupid ground reflections to 300% fix this or im smashing my head into a brick wall doing nothing
-
-            /* Resources.FindObjectsOfTypeAll<MirroredGameNoteController>();
-             Resources.FindObjectsOfTypeAll<MirroredBombNoteController>();
-             Resources.FindObjectsOfTypeAll<MirroredObstacleController>(); */
-
-            //what is above is the precurser code for the reflections fix. please dont touch it.
 
            
 
@@ -33,7 +27,20 @@ namespace PiFix
             {
                 __result[8] += eye == Camera.StereoscopicEye.Right ? 0.4900f : -0.23f;
                 __result[8] += eye == Camera.StereoscopicEye.Left ? 0.23f : -0.23f;
+
+
             }
+
+            //somehow the exact same code but mentioning only the left eye can mess with reflections and idk how that works but sure thing!
+
+        /*    if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.FiveK)
+            {
+                __result[8] += eye == Camera.StereoscopicEye.Left ? 0.00f : -0.137f;
+                     __result[8] += eye == Camera.StereoscopicEye.Right ? 0.00f : -0.1250f;
+             
+              
+            }
+        */
             //pimax 8k values
             else if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.EightK)
             {
@@ -50,3 +57,6 @@ namespace PiFix
     }
 
 }
+/*personal note: the reason why reflections are on the left is because i shifted lighting to the left. 
+ * which not only alligned the reflections. but also moved all reflections to the left its not crosseye'd anymore (thank goodness) but
+ it isnt in the middle perfectly*/
