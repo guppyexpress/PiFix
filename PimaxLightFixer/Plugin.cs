@@ -67,9 +67,11 @@ namespace PiFix
             {
                 if (BSMLPresent)
                 {
+
                     Logger.Debug("Creating settings menu");
                     BeatSaberMarkupLanguage.Settings.BSMLSettings.instance.AddSettingsMenu("PiFix", Resource_Settings_Path, Config);
                     SettingsMenuCreated = true;
+
                 }
                 else
                 {

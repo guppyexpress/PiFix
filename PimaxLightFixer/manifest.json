@@ -3,9 +3,9 @@
   "id": "PiFix",
   "name": "PiFix",
   "author": "Astr",
-  "version": "2.39.7",
+  "version": "2.40.7",
   "description": "A simple fix needed to play beatsaber on a Pimax headset without having double vision. Or needing Parallel Projections. PiFix corrects the double vision error shown on Pimax and Xtal headsets in game",
-  "gameVersion": "1.21.0",
+  "gameVersion": "1.22.0",
   "dependsOn": {
     "BSIPA": "^4.2.2"
   },
