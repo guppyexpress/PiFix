@@ -18,13 +18,23 @@ namespace PiFix.Configuration
         [Description("8k")]
         EightK,
         [Description("12k")]
-        TwelveK
+        TwelveK,
+        [Description("Crystal")]
+        Crystal,
+        [Description("Valve Index")]
+        ValveIndex,
     }
 
     internal class PluginConfig
     {
 
-        [UseConverter(typeof(EnumConverter<PimaxType>))]
+        [UseConverter(typeof(EnumConverter<
+            
+            
+            
+            
+            
+            >))]
         public virtual PimaxType PimaxType { get; set; } = PimaxType.None;
         public virtual bool DisableLighting { get; set; } = false;
 
@@ -62,7 +72,8 @@ namespace PiFix.Configuration
             PimaxType.None,
             PimaxType.FiveK,
             PimaxType.EightK,
-            PimaxType.TwelveK
+            PimaxType.TwelveK,
+            PimaxType.ValveIndex
         };
 
     }

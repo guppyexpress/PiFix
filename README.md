@@ -19,7 +19,12 @@ get this mod!
  <br>an example would look like </h3>
 <br>
  {<br>
-  "PimaxType": "FiveK",<br>
+  "
+  
+  
+  
+  
+  ": "FiveK",<br>
   "DisableLighting": false<br>
 }<br>
 <br>

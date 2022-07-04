@@ -27,19 +27,35 @@ namespace PiFix
                 __result[8] += eye == Camera.StereoscopicEye.Right ? 0.4900f : -0.23f;
                 __result[8] += eye == Camera.StereoscopicEye.Left ? 0.23f : -0.23f;
 
+            // Valve Index values
+            }
+            if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.ValveIndex)
+            {
+                __result[8] += eye == Camera.StereoscopicEye.Right ? 0.390122f : -0.23f;
+                __result[8] += eye == Camera.StereoscopicEye.Left ? 0.23f : -0.23f;
+
 
             }
 
             //somehow the exact same code but mentioning only the left eye can mess with reflections and idk how that works but sure thing!
 
-        /*    if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.FiveK)
+            /*    if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.FiveK)
+                {
+                    __result[8] += eye == Camera.StereoscopicEye.Left ? 0.00f : -0.137f;
+                         __result[8] += eye == Camera.StereoscopicEye.Right ? 0.00f : -0.1250f;
+
+
+                }
+            */
+
+            //pimax crystal values
+            if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.Crystal)
             {
-                __result[8] += eye == Camera.StereoscopicEye.Left ? 0.00f : -0.137f;
-                     __result[8] += eye == Camera.StereoscopicEye.Right ? 0.00f : -0.1250f;
-             
-              
+                __result[8] += eye == Camera.StereoscopicEye.Right ? 0.03120f : -0.443f;
+                __result[8] += eye == Camera.StereoscopicEye.Left ? 0.443f : -0.443f;
+
+
             }
-        */
             //pimax 8k values
             else if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.EightK)
             {
@@ -57,5 +73,5 @@ namespace PiFix
 
 }
 /*personal note: the reason why reflections are on the left is because i shifted lighting to the left. 
- * which not only alligned the reflections. but also moved all reflections to the left its not crosseye'd anymore (thank goodness) but
+which not only alligned the reflections. but also moved all reflections to the left its not crosseye'd anymore (thank goodness) but
  it isnt in the middle perfectly*/
