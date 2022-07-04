@@ -73,6 +73,7 @@ namespace PiFix.Configuration
             PimaxType.FiveK,
             PimaxType.EightK,
             PimaxType.TwelveK,
+            PimaxType.Crystal,
             PimaxType.ValveIndex
         };
 
