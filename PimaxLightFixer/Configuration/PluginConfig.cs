@@ -14,7 +14,7 @@ namespace PiFix.Configuration
 
         None,
         [Description("5k")]
-        FiveK, 
+        FiveK,
         [Description("8k")]
         EightK,
         [Description("12k")]
@@ -24,17 +24,10 @@ namespace PiFix.Configuration
         [Description("Valve Index")]
         ValveIndex,
     }
-
     internal class PluginConfig
     {
 
-        [UseConverter(typeof(EnumConverter<
-            
-            
-            
-            
-            
-            >))]
+        [UseConverter(typeof(EnumConverter<PimaxType>))]
         public virtual PimaxType PimaxType { get; set; } = PimaxType.None;
         public virtual bool DisableLighting { get; set; } = false;
 
@@ -67,8 +60,8 @@ namespace PiFix.Configuration
         /// List of possible options for BSML settings view.
         /// </summary>
         [Ignore]
-        public List<object> PimaxTypes = new List<object>() 
-        { 
+        public List<object> PimaxTypes = new List<object>()
+        {
             PimaxType.None,
             PimaxType.FiveK,
             PimaxType.EightK,

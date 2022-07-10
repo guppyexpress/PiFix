@@ -29,7 +29,7 @@ namespace PiFix
 
             // Valve Index values
             }
-            if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.ValveIndex)
+            else if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.ValveIndex)
             {
                 __result[8] += eye == Camera.StereoscopicEye.Right ? 0.390120f : -0.23f;
                 __result[8] += eye == Camera.StereoscopicEye.Left ? 0.23f : -0.23f;
@@ -49,7 +49,7 @@ namespace PiFix
             */
 
             //pimax crystal values
-            if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.Crystal)
+            else if (Plugin.Config.PimaxType == PiFix.Configuration.PimaxType.Crystal)
             {
                 __result[8] += eye == Camera.StereoscopicEye.Right ? 0.03120f : -0.443f;
                 __result[8] += eye == Camera.StereoscopicEye.Left ? 0.443f : -0.443f;
