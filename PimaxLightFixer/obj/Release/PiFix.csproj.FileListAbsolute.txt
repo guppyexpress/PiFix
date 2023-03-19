@@ -40,3 +40,4 @@ C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Release\PiFix.cspr
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Release\PiFix.dll
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Release\PiFix.pdb
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Release\PiFix.csproj.AssemblyReference.cache
+C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\bin\Release\0Harmony.dll

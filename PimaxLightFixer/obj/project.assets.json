@@ -20,10 +20,14 @@
           "System.Xaml"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Framework.dll": {}
+          "lib/net472/Microsoft.Build.Framework.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.Build.Tasks.Core/16.5.0": {
@@ -50,10 +54,14 @@
           "System.Xml.Linq"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Tasks.Core.dll": {}
+          "lib/net472/Microsoft.Build.Tasks.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.Build.Utilities.Core/16.5.0": {
@@ -67,37 +75,53 @@
           "System.Configuration"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Utilities.Core.dll": {}
+          "lib/net472/Microsoft.Build.Utilities.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.VisualStudio.Setup.Configuration.Interop/1.16.30": {
         "type": "package",
         "compile": {
-          "lib/net35/_._": {}
+          "lib/net35/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {}
+          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Buffers/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Buffers.dll": {}
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Collections.Immutable/1.5.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.Process/4.3.0": {
@@ -135,10 +159,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Numerics.Vectors/4.4.0": {
@@ -148,10 +176,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net46/_._": {}
+          "ref/net46/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {}
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Resources.Extensions/4.6.0": {
@@ -160,28 +192,40 @@
           "System.Memory": "4.5.3"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {}
+          "lib/netstandard2.0/System.Resources.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Tasks.Dataflow/4.9.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {}
+          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {
+            "related": ".xml"
+          }
         }
       }
     },
@@ -204,10 +248,14 @@
           "System.Xaml"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Framework.dll": {}
+          "lib/net472/Microsoft.Build.Framework.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.Build.Tasks.Core/16.5.0": {
@@ -234,10 +282,14 @@
           "System.Xml.Linq"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Tasks.Core.dll": {}
+          "lib/net472/Microsoft.Build.Tasks.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.Build.Utilities.Core/16.5.0": {
@@ -251,37 +303,53 @@
           "System.Configuration"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Utilities.Core.dll": {}
+          "lib/net472/Microsoft.Build.Utilities.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.VisualStudio.Setup.Configuration.Interop/1.16.30": {
         "type": "package",
         "compile": {
-          "lib/net35/_._": {}
+          "lib/net35/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {}
+          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Buffers/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Buffers.dll": {}
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Collections.Immutable/1.5.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.Process/4.3.0": {
@@ -305,10 +373,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Numerics.Vectors/4.4.0": {
@@ -318,10 +390,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net46/_._": {}
+          "ref/net46/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {}
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Resources.Extensions/4.6.0": {
@@ -330,28 +406,40 @@
           "System.Memory": "4.5.3"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {}
+          "lib/netstandard2.0/System.Resources.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Tasks.Dataflow/4.9.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {}
+          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {
+            "related": ".xml"
+          }
         }
       }
     },
@@ -374,10 +462,14 @@
           "System.Xaml"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Framework.dll": {}
+          "lib/net472/Microsoft.Build.Framework.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.Build.Tasks.Core/16.5.0": {
@@ -404,10 +496,14 @@
           "System.Xml.Linq"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Tasks.Core.dll": {}
+          "lib/net472/Microsoft.Build.Tasks.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.Build.Utilities.Core/16.5.0": {
@@ -421,37 +517,53 @@
           "System.Configuration"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Utilities.Core.dll": {}
+          "lib/net472/Microsoft.Build.Utilities.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.VisualStudio.Setup.Configuration.Interop/1.16.30": {
         "type": "package",
         "compile": {
-          "lib/net35/_._": {}
+          "lib/net35/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {}
+          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Buffers/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Buffers.dll": {}
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Collections.Immutable/1.5.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.Process/4.3.0": {
@@ -475,10 +587,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Numerics.Vectors/4.4.0": {
@@ -488,10 +604,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net46/_._": {}
+          "ref/net46/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {}
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Resources.Extensions/4.6.0": {
@@ -500,28 +620,40 @@
           "System.Memory": "4.5.3"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {}
+          "lib/netstandard2.0/System.Resources.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Tasks.Dataflow/4.9.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {}
+          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {
+            "related": ".xml"
+          }
         }
       }
     },
@@ -544,10 +676,14 @@
           "System.Xaml"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Framework.dll": {}
+          "lib/net472/Microsoft.Build.Framework.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.Build.Tasks.Core/16.5.0": {
@@ -574,10 +710,14 @@
           "System.Xml.Linq"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Tasks.Core.dll": {}
+          "lib/net472/Microsoft.Build.Tasks.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.Build.Utilities.Core/16.5.0": {
@@ -591,37 +731,53 @@
           "System.Configuration"
         ],
         "compile": {
-          "lib/net472/_._": {}
+          "lib/net472/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net472/Microsoft.Build.Utilities.Core.dll": {}
+          "lib/net472/Microsoft.Build.Utilities.Core.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.VisualStudio.Setup.Configuration.Interop/1.16.30": {
         "type": "package",
         "compile": {
-          "lib/net35/_._": {}
+          "lib/net35/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {}
+          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Buffers/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Buffers.dll": {}
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Collections.Immutable/1.5.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.Process/4.3.0": {
@@ -645,10 +801,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Numerics.Vectors/4.4.0": {
@@ -658,10 +818,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net46/_._": {}
+          "ref/net46/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {}
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Resources.Extensions/4.6.0": {
@@ -670,28 +834,40 @@
           "System.Memory": "4.5.3"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {}
+          "lib/netstandard2.0/System.Resources.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Tasks.Dataflow/4.9.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {}
+          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -1033,8 +1209,7 @@
   },
   "packageFolders": {
     "C:\\Users\\Sheen\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1047,14 +1222,12 @@
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\Sheen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net472"

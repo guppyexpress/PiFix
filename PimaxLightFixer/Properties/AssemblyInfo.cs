@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("PiFix")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Astr")]
+[assembly: AssemblyCompany("Nihnyx")]
 [assembly: AssemblyProduct("PiFix")]
-[assembly: AssemblyCopyright("Copyright © 2022")]
+[assembly: AssemblyCopyright("Copyright © 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("2.46.9")]
-[assembly: AssemblyFileVersion("2.46.9")]
+[assembly: AssemblyVersion("2.49.12")]
+[assembly: AssemblyFileVersion("2.49.12")]

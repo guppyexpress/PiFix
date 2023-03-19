@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
   "id": "PiFix",
   "name": "PiFix",
-  "author": "Astr",
-  "version": "2.46.9",
+  "author": "Nihnyx",
+  "version": "2.49.12",
   "description": "A simple fix needed to play beatsaber on a Pimax headset without having double vision. Or needing Parallel Projections. PiFix corrects the double vision error shown on Pimax and Xtal headsets in game",
-  "gameVersion": "1.23.0",
+  "gameVersion": "1.28.0",
   "dependsOn": {
     "BSIPA": "^4.2.2"
   },

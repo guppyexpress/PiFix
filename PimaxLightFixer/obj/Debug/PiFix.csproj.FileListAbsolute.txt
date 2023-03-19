@@ -20,8 +20,6 @@ C:\Users\Sheen\source\repos\PimaxLightFix-config\PimaxLightFixer\obj\Debug\PiFix
 C:\Users\Sheen\source\repos\PimaxLightFix-config\PimaxLightFixer\obj\Debug\PiFix.pdb
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Debug\PiFix.csproj.AssemblyReference.cache
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Debug\PiFix.csproj.CoreCompileInputs.cache
-C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Debug\PiFix.dll
-C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Debug\PiFix.pdb
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\bin\Debug\PiFix.dll
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\bin\Debug\PiFix.pdb
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\bin\Debug\Microsoft.Build.Framework.dll
@@ -38,4 +36,7 @@ C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\bin\Debug\System.Numer
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\bin\Debug\System.Resources.Extensions.dll
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\bin\Debug\0Harmony.dll
 C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Debug\PiFix.csproj.CopyComplete
+C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Debug\PiFix.dll
+C:\Users\Sheen\source\repos\PimaxLightFix\PimaxLightFixer\obj\Debug\PiFix.pdb
